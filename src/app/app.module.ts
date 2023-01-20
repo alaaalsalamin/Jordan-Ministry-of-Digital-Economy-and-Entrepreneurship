@@ -34,6 +34,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatSelectModule } from '@angular/material/select';
 import { MatTableModule } from '@angular/material/table';
 import { MatTabsModule } from '@angular/material/tabs';
+import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 
 const MatImports = [
   MatTableModule,
@@ -50,12 +51,14 @@ const MatImports = [
 
 @NgModule({
   declarations: [AppComponent, HomeComponent, UsersComponent],
+
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
     AngularFireModule.initializeApp(environment.firebase),
+    AngularFireAuthModule,
     SideNavModule,
     NgbModule,
     FontAwesomeModule,

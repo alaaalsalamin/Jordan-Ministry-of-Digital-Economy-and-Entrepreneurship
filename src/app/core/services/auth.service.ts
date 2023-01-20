@@ -34,7 +34,7 @@ export class AuthService {
       this.angularFireAuth
         .signInWithEmailAndPassword(email, password)
         .catch(error => {
-          window.alert(error.message);
+          window.alert("Invalid E-mail and/or Password");
         })
     );
   }
@@ -60,7 +60,7 @@ export class AuthService {
       this.angularFireAuth
         .createUserWithEmailAndPassword(email, password)
         .catch(error => {
-          window.alert(error.message);
+          window.alert("Invalid E-mail and/or Password");
         })
     );
   }

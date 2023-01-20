@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {
   FormBuilder,
   FormControl,
@@ -64,11 +64,9 @@ export class LoginSignupComponent {
     });
   }
   onSignupClicked() {
-    // if (this.formGroup.invalid) {
-    //   this.validateFormGroup();
-    // } else {
+
     this.signup();
-    // }
+
   }
 
   onloginClicked() {
@@ -111,7 +109,7 @@ export class LoginSignupComponent {
     if (this.email.hasError('required')) {
       return 'You must enter a value';
     }
-    return this.email.hasError('email') ? 'Not a valid email' : '';
+    return this.email.hasError('email') ? 'Not a valid email ' : '';
   }
 
   getPasswordErrorMessage() {

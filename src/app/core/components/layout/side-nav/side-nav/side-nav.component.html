@@ -69,7 +69,7 @@
     <mat-divider></mat-divider>
 
     <button mat-button (click)="onLoggedoutClicked()">
-      <mat-icon>logout</mat-icon>
+      <mat-icon>log out</mat-icon>
       <div>
         Logout
       </div>
@@ -79,19 +79,26 @@
     <mat-toolbar
       *ngIf="router.url !== '/auth/login' && router.url !== '/auth/signup'"
     >
-      <div style="display: flex; justify-content: center; align-items: center;">
+
+
+    <!-- LOGO -->
+      <div style="display: flex; justify-content: center; align-items: center; gap: 0.7rem;">
         <button mat-icon-button (click)="snav.toggle()" *ngIf="isLoggedIn">
           <mat-icon style="color: white;"> menu</mat-icon>
         </button>
         <a href="/">
           <img
-            style="width:8rem; cursor: pointer;"
-            src="../../../../../../assets/Akatsuki-Logo-PNG-Pic.png"
+            style="width:4rem;height: 4rem; cursor: pointer;"
+            src="../../../../../../assets/Jordan Ministry Logo.jpg"
             href="/"
           />
-        </a>
-      </div>
+        </a><a href="/">
+        <h3 style="color:rgb(231, 9, 9); cursor: pointer;">Jordan Ministry of Digital Economy and Entrepreneurship</h3>
+      </a></div>
 
+
+
+      <!-- LogIn LogOut Buttons -->
       <div style="display: flex; gap:1rem; color:rgb(231, 9, 9);" *ngIf="!isLoggedIn">
         <button
           type="button"
@@ -100,7 +107,7 @@
           style="color: rgb(231, 9, 9); display: flex; justify-content: center; align-items: center;"
         >
           <mat-icon style="margin-bottom: 0.625rem;">login</mat-icon>
-          <p>Login</p>
+          <p>Log In</p>
         </button>
         <button
           (click)="onSignupClicked()"
