@@ -1,46 +1,38 @@
 <div class="m-0 container-fluid" style="padding-bottom: 2rem;">
-  <div class="row" style="gap:0.5em;">
-    <div class="card col-md-4" style="width: 21rem; " *ngFor="let card of data">
+  <div class="row" style="gap:1em; justify-content: center;">
+    <div class="card col-md-4" style="width: 22rem; align-items:stretch;" *ngFor="let card of data">
       <div class="card-header" >
         <img
           class="card-img-top"
-          style="height: 4rem; width: 10rem; "
-          src="../../../../../../assets/eFAWATEERcom.PNG"
+          style="max-width: 410px; max-height: 150px;"
+          src="{{ card.logo }}"
           alt="Card image cap"
         />
       </div>
 
       <div class="card-body">
-        <h5 class="card-title">{{ card.name }}</h5>
-        <p class="card-text">
-          {{ card?.description.slice(0, 230) }}
+        <h4 class="card-title" style="text-align: center; font-weight: 550; ">{{ card.name }}</h4>
+        <p class="card-text" style=" text-align:justify;">
+          {{ card?.description.slice(0, 290) }}
         </p>
       </div>
       <div class="card-footer row">
         <button class="btn btn-warning" (click)="onRowClicked(card)">
           Preview
         </button>
-        <share-buttons
+        <share-buttons style="justify-content: center;"
           theme="circles-dark"
           [include]="[
             'copy',
-            'facebook',
             'email',
+            'whatsapp',
+            'facebook',
             'messenger',
-            'mix',
-            'line',
             'linkedin',
             'pinterest',
-            'print',
-            'reddit',
-            'sms',
             'telegram',
-            'tumblr',
             'twitter',
             'viber',
-            'vk',
-            'xing',
-            'whatsapp'
           ]"
           [showIcon]="true"
           [showText]="false"
@@ -48,7 +40,7 @@
           description="Fresh Spot ... POWERFUL, NOT OVERPOWERING"
           twitterAccount="elonmusk"
           class="pt-5"
-          [show]="3"
+          [show]="4"
         >
         </share-buttons>
       </div>
