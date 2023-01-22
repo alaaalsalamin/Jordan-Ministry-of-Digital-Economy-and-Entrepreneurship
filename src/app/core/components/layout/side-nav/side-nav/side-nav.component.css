@@ -1,5 +1,6 @@
 mat-sidenav-container {
   height: 100vh;
+
 }
 .ng-star-inserted {
   cursor: pointer;
@@ -9,6 +10,7 @@ mat-sidenav {
   background-color: #30362f;
   color: #fff;
   padding: 1rem;
+
 }
 
 .mdc-button__label {

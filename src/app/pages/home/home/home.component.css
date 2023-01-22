@@ -2,17 +2,18 @@
 .bg-container {
   position: relative;
   text-align: center;
-  color: aliceblue;
   margin-bottom: 2rem;
+
 }
 
-/* .bg-container img {
-  opacity: 0.5;
-} */
+ .bg-container img {
+  opacity: 0.8;
+}
 /* Centered text */
 .centered {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
 }

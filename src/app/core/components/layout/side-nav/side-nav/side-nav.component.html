@@ -93,18 +93,19 @@
             href="/"
           />
         </a><a href="/">
-        <h3 style="color:rgb(231, 9, 9); cursor: pointer;">Jordan Ministry of Digital Economy and Entrepreneurship</h3>
+        <h3 style="color:rgb(3, 230, 180); cursor: pointer; font-family:cursive;">Jordan Ministry of Digital Economy and Entrepreneurship</h3>
       </a></div>
 
 
 
       <!-- LogIn LogOut Buttons -->
-      <div style="display: flex; gap:1rem; color:rgb(231, 9, 9);" *ngIf="!isLoggedIn">
+      <div style="display: flex; gap:1rem; color:rgb(3, 230, 180); font-family:cursive; "
+      *ngIf="!isLoggedIn">
         <button
           type="button"
           class="btn"
           (click)="OnLoginClick()"
-          style="color: rgb(231, 9, 9); display: flex; justify-content: center; align-items: center;"
+          style="color: rgb(3, 230, 180); display: flex; justify-content: center; align-items: center;"
         >
           <mat-icon style="margin-bottom: 0.625rem;">login</mat-icon>
           <p>Log In</p>
@@ -113,7 +114,7 @@
           (click)="onSignupClicked()"
           type="button"
           class="btn"
-          style="color:rgb(231, 9, 9); display: flex; justify-content: center; align-items: center;"
+          style="color:rgb(3, 230, 180); display: flex; justify-content: center; align-items: center;"
         >
           <mat-icon style="margin-bottom: 0.625rem;">person</mat-icon>
           <p>Sing Up</p>
