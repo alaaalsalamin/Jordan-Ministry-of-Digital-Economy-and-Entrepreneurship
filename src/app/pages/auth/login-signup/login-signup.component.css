@@ -13,6 +13,7 @@ p {
   line-height: 20px;
   letter-spacing: 0.5px;
   margin: 20px 0 30px;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 span {
@@ -32,6 +33,7 @@ button {
   background-color: #ff4b2b;
   color: #ffffff;
   font-size: 12px;
+  font-family:cursive;
   font-weight: bold;
   padding: 12px 45px;
   letter-spacing: 1px;
@@ -61,14 +63,23 @@ form {
   padding: 0 50px;
   height: 100%;
   text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+
 }
 
 mat-form-field {
-  background-color: #eee;
+  background-color: rgb(236, 250, 246);
   border: none;
   padding: 12px 15px;
   margin: 8px 0;
   width: 100%;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+
+mat-label , mat-error {
+  font-family: 'Times New Roman', Times, serif;
+
 }
 
 .container {
@@ -135,6 +146,7 @@ mat-form-field {
   overflow: hidden;
   transition: transform 0.6s ease-in-out;
   z-index: 100;
+
 }
 
 .container.right-panel-active .overlay-container {
@@ -142,9 +154,9 @@ mat-form-field {
 }
 
 .overlay {
-  background: #ff4b2b;
-  background: -webkit-linear-gradient(to right, #ff4b2b, #625834);
-  background: linear-gradient(to right, #625834, #ff4b2b);
+  background: rgb(33, 48, 48);
+  background: -webkit-linear-gradient(to right, rgb(3, 230, 180), #154947);
+  background: linear-gradient(to right, #154947, rgb(3, 230, 180));
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 0;
@@ -155,6 +167,10 @@ mat-form-field {
   width: 200%;
   transform: translateX(0);
   transition: transform 0.6s ease-in-out;
+}
+.overlay p ,h1 {
+  font-family:cursive;
+  font-size: 18px;
 }
 
 .container.right-panel-active .overlay {

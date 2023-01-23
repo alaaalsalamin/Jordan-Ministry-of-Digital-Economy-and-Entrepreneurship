@@ -10,12 +10,16 @@ mat-sidenav {
   background-color: #30362f;
   color: #fff;
   padding: 1rem;
-
 }
 
 .mdc-button__label {
   color: white;
 }
+
+/* h1, h4, p {
+  font-family: 'Times New Roman', Times, serif;
+
+} */
 
 .mat-mdc-button:not(:disabled) {
   color: white !important;
@@ -59,6 +63,7 @@ mat-toolbar {
 mat-icon {
   color: #fff;
   margin-inline-end: 10px;
+  
 }
 
 a {
