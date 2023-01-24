@@ -114,6 +114,8 @@ ul {
 .footer-widget ul li a {
   color: #878787;
   text-transform: capitalize;
+  text-decoration: none;
+
 }
 .subscribe-form {
   position: relative;

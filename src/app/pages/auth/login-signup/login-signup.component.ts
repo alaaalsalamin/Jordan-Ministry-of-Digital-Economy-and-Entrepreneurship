@@ -70,11 +70,11 @@ export class LoginSignupComponent {
   }
 
   onloginClicked() {
-    // if (this.formGroup.invalid) {
-    //   this.validateFormGroup();
-    // } else {
+    if (this.formGroup.invalid) {
+      this.validateFormGroupLogin();
+    } else {
     this._authService.login(this.emailLogin.value, this.passwordLogin.value);
-    // }
+    }
   }
   signup() {
     this._authService
@@ -99,7 +99,7 @@ export class LoginSignupComponent {
   }
 
   validateFormGroupLogin() {
-    Object.keys(this.formGroup.controls).forEach(filed => {
+    Object.keys(this.formGroupLogin.controls).forEach(filed => {
       const control = this.formGroup.get(filed);
       control?.markAsTouched({ onlySelf: true });
     });
@@ -114,6 +114,21 @@ export class LoginSignupComponent {
 
   getPasswordErrorMessage() {
     if (this.password.hasError('required')) {
+      return 'You must enter a value';
+    }
+    return 'Password not valid';
+  }
+
+
+  getEmailErrorMessageLogin() {
+    if (this.emailLogin.hasError('required')) {
+      return 'You must enter a value';
+    }
+    return this.emailLogin.hasError('email') ? 'Not a valid email ' : '';
+  }
+
+  getPasswordErrorMessageLogin() {
+    if (this.passwordLogin.hasError('required')) {
       return 'You must enter a value';
     }
     return 'Password not valid';

@@ -26,6 +26,7 @@ mat-sidenav {
 }
 mat-list-item {
   cursor: pointer;
+
 }
 
 mat-list-item mat-icon {
@@ -47,6 +48,7 @@ mat-toolbar {
   color: white;
   background-color: #000000;
   margin-bottom: 2rem;
+
 }
 
 .bg-container img {
@@ -63,7 +65,7 @@ mat-toolbar {
 mat-icon {
   color: #fff;
   margin-inline-end: 10px;
-  
+
 }
 
 a {
@@ -71,12 +73,15 @@ a {
 }
 .item-text {
   color: #fff;
+  font-family: 'Times New Roman', Times, serif;
+
 }
 
 main {
   padding: 1rem;
   margin: 1rem;
   background-color: #fff;
+
 }
 
 .name {
@@ -94,6 +99,7 @@ mat-divider {
   margin-top: 16px;
   margin-bottom: 16px;
   background-color: rgba(255, 255, 255, 0.5);
+
 }
 
 .avatar {

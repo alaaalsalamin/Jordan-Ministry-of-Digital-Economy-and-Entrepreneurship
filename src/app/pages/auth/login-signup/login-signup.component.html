@@ -52,7 +52,7 @@
           placeholder="Email"
         />
         <mat-error *ngIf="email.invalid">{{
-          getEmailErrorMessage()
+          getEmailErrorMessageLogin()
         }}</mat-error>
       </mat-form-field>
       <mat-form-field appearance="outline" class="field-width">
@@ -64,10 +64,10 @@
           type="password"
         />
         <mat-error *ngIf="password.invalid">{{
-          getPasswordErrorMessage()
+          getPasswordErrorMessageLogin()
         }}</mat-error>
       </mat-form-field>
-      <a href="#">Forgot your password?</a>
+      <a>Forgot your password?</a>
       <button mat-raised-button (click)="onloginClicked()">
         Log in
       </button>

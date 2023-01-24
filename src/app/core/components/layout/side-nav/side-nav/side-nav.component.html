@@ -1,6 +1,6 @@
 <mat-sidenav-container>
   <mat-sidenav #snav>
-    <div style="display: flex; justify-content: center" *ngIf="loading">
+    <div style="display: flex; justify-content: center;" *ngIf="loading">
       <mat-spinner diameter="20" color="primary"></mat-spinner>
     </div>
 
@@ -25,7 +25,7 @@
             <mat-icon matListItemIcon>
               {{ item.icon }}
             </mat-icon>
-            <div matListItemTitle class="item-text">
+            <div matListItemTitle class="item-text" >
               {{ item.displayName }}
             </div>
           </mat-list-item>
@@ -71,7 +71,7 @@
     <button mat-button (click)="onLoggedoutClicked()">
       <mat-icon>log out</mat-icon>
       <div>
-        Logout
+        Log Out
       </div>
     </button>
   </mat-sidenav>
