@@ -42,7 +42,7 @@
     <form [formGroup]="formGroupLogin">
       <h1>Log in</h1>
 
-      <!-- <span>using your created account</span> -->
+      <!-- <span>or use your account</span> -->
       <mat-form-field appearance="outline" class="field-width">
         <mat-label>Email</mat-label>
         <input
@@ -52,7 +52,7 @@
           placeholder="Email"
         />
         <mat-error *ngIf="email.invalid">{{
-          getEmailErrorMessageLogin()
+          getEmailErrorMessage()
         }}</mat-error>
       </mat-form-field>
       <mat-form-field appearance="outline" class="field-width">
@@ -64,10 +64,10 @@
           type="password"
         />
         <mat-error *ngIf="password.invalid">{{
-          getPasswordErrorMessageLogin()
+          getPasswordErrorMessage()
         }}</mat-error>
       </mat-form-field>
-      <a>Forgot your password?</a>
+      <a href="/auth/login">Forgot your password?</a>
       <button mat-raised-button (click)="onloginClicked()">
         Log in
       </button>
@@ -82,7 +82,7 @@
       </div>
       <div class="overlay-panel overlay-right">
         <h1>Hello, Friend!</h1>
-        <p>Your first step begins with a click!   please create an account to start</p>
+        <p>Your first step begins with a click! please create an account to start</p>
         <button class="ghost" id="signUp">Sign Up</button>
       </div>
     </div>

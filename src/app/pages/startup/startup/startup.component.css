@@ -1,17 +1,22 @@
 .row {
   display: flex;
+
 }
 
 .col {
   flex: 1;
+
 }
 
 .align-end {
   text-align: end;
+
 }
+
 
 .btn-action {
   margin-inline-start: 10px;
+
 }
 
 table {
@@ -22,7 +27,7 @@ table {
 }
 
 .btn-action {
-  background-color: #f8c621; 
+  background-color: #e49e06;
 }
 
 table {

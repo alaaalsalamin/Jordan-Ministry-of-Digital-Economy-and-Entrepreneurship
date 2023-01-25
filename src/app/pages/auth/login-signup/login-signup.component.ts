@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import {
   FormBuilder,
   FormControl,
@@ -64,17 +64,19 @@ export class LoginSignupComponent {
     });
   }
   onSignupClicked() {
-
+    // if (this.formGroup.invalid) {
+    //   this.validateFormGroup();
+    // } else {
     this.signup();
-
+    // }
   }
 
   onloginClicked() {
-    if (this.formGroup.invalid) {
-      this.validateFormGroupLogin();
-    } else {
+    // if (this.formGroup.invalid) {
+    //   this.validateFormGroup();
+    // } else {
     this._authService.login(this.emailLogin.value, this.passwordLogin.value);
-    }
+    // }
   }
   signup() {
     this._authService
@@ -98,37 +100,22 @@ export class LoginSignupComponent {
     });
   }
 
-  validateFormGroupLogin() {
-    Object.keys(this.formGroupLogin.controls).forEach(filed => {
-      const control = this.formGroup.get(filed);
-      control?.markAsTouched({ onlySelf: true });
-    });
-  }
+   validateFormGroupLogin() {
+     Object.keys(this.formGroup.controls).forEach(filed => {
+       const control = this.formGroup.get(filed);
+       control?.markAsTouched({ onlySelf: true });
+     });
+   }
 
   getEmailErrorMessage() {
     if (this.email.hasError('required')) {
       return 'You must enter a value';
     }
-    return this.email.hasError('email') ? 'Not a valid email ' : '';
+    return this.email.hasError('email') ? 'Not a valid email' : '';
   }
 
   getPasswordErrorMessage() {
     if (this.password.hasError('required')) {
-      return 'You must enter a value';
-    }
-    return 'Password not valid';
-  }
-
-
-  getEmailErrorMessageLogin() {
-    if (this.emailLogin.hasError('required')) {
-      return 'You must enter a value';
-    }
-    return this.emailLogin.hasError('email') ? 'Not a valid email ' : '';
-  }
-
-  getPasswordErrorMessageLogin() {
-    if (this.passwordLogin.hasError('required')) {
       return 'You must enter a value';
     }
     return 'Password not valid';
