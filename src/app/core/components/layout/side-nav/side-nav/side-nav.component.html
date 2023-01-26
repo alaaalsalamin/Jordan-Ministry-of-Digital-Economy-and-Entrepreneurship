@@ -81,9 +81,9 @@
     >
 
 
-    <!-- LOGO -->
+    <!-- Header -->
 
-      <div style="display: flex; justify-content: center; align-items: center; gap: 0.7rem;">
+      <div class="Header" style="display: flex; justify-content: center; align-items: center; gap: 0.7rem;">
         <button mat-icon-button (click)="snav.toggle()" *ngIf="isLoggedIn">
           <mat-icon style="color: white;"> menu</mat-icon>
         </button>
@@ -99,7 +99,7 @@
 
 
       <!-- LogIn LogOut Buttons -->
-      <div style="display: flex; gap:1rem; color:rgb(3, 230, 180); font-family:cursive; "
+      <div class="Header" style="display: flex; gap:1rem; color:rgb(3, 230, 180); font-family:cursive; "
       *ngIf="!isLoggedIn">
         <button
           type="button"

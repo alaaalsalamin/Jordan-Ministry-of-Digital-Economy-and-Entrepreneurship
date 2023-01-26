@@ -35,6 +35,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatTableModule } from '@angular/material/table';
 import { MatTabsModule } from '@angular/material/tabs';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
+import { AboutUsComponent } from './about-us/about-us.component';
 
 const MatImports = [
   MatTableModule,
@@ -50,7 +51,7 @@ const MatImports = [
 ];
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, UsersComponent],
+  declarations: [AppComponent, HomeComponent, UsersComponent, AboutUsComponent],
 
   imports: [
     BrowserModule,

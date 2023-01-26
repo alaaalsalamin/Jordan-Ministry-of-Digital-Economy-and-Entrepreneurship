@@ -24,7 +24,7 @@ export class StartupComponent implements OnInit, OnDestroy {
     this.getAllData();
   }
 
-  onRowClicked(row: Startup) {
+  onRowClicked(row: Startup) { 
     this.router.navigate(['/startup/preview-startup'], {
       queryParams: {
         key: row.key

@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { AboutUsComponent } from 'src/app/about-us/about-us.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-footer',
@@ -6,5 +8,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent {
+  constructor(
+    //  private router: Router
+  ) {}
+
+//   aboutUs() {
+//    this.router.navigate(['/app/about-us'], {
+
+//    });
+//  }
 
 }
