@@ -1,4 +1,4 @@
-.aboutUsContent {
+.contactUsContent {
   width: 90%;
   height: fit-content;
   border: 2px solid rgb(185, 185, 185);
@@ -14,7 +14,7 @@ font-weight: 500;
 color: rgb(219, 124, 0);
 }
 
-p , li{
+p {
   font-size: 16px;
   color: rgb(33, 46, 46);
 

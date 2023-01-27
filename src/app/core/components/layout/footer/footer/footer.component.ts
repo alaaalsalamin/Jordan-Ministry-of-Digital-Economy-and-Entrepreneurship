@@ -12,10 +12,6 @@ export class FooterComponent {
     //  private router: Router
   ) {}
 
-//   aboutUs() {
-//    this.router.navigate(['/app/about-us'], {
 
-//    });
-//  }
 
 }

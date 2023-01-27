@@ -36,6 +36,8 @@ import { MatTableModule } from '@angular/material/table';
 import { MatTabsModule } from '@angular/material/tabs';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { WelcomingNoteComponent } from './welcoming-note/welcoming-note.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 const MatImports = [
   MatTableModule,
@@ -51,7 +53,7 @@ const MatImports = [
 ];
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, UsersComponent, AboutUsComponent],
+  declarations: [AppComponent, HomeComponent, UsersComponent, AboutUsComponent, WelcomingNoteComponent, ContactUsComponent],
 
   imports: [
     BrowserModule,

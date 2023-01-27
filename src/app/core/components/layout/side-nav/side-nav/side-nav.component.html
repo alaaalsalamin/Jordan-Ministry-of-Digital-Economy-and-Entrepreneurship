@@ -132,8 +132,15 @@
           Logout
         </p>
       </button>
-    </mat-toolbar>
 
+     
+    </mat-toolbar>
+    <!-- <div class="TopNavBar">
+      <ul>
+        <li><a routerLink="/about-us">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Our Services</a></li>
+      </ul></div> -->
     <router-outlet></router-outlet>
     <app-footer
       *ngIf="router.url !== '/auth/login' && router.url !== '/auth/signup'"

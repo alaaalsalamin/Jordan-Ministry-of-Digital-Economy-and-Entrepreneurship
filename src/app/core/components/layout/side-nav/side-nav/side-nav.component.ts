@@ -6,11 +6,15 @@ import { NavMenuDto } from 'src/app/core/dto/nav-menu';
 import { AuthService } from 'src/app/core/services/auth.service';
 import { SidenavService } from 'src/app/core/services/sidenav.service';
 
+
 @Component({
   selector: 'app-side-nav',
   templateUrl: './side-nav.component.html',
-  styleUrls: ['./side-nav.component.css']
+  styleUrls: ['./side-nav.component.css'],
+
+
 })
+
 export class SideNavComponent implements OnInit, AfterViewInit {
   @ViewChild(MatSidenav) sidenav!: MatSidenav;
   navMenu: NavMenuDto;
@@ -23,6 +27,7 @@ export class SideNavComponent implements OnInit, AfterViewInit {
     private _sideNav: SidenavService,
     private _authService: AuthService,
     public router: Router
+
   ) {
     this.navMenu = this._sideNav.getNavMenu();
   }
