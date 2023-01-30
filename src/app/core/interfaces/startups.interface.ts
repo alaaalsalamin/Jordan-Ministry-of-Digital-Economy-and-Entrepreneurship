@@ -10,3 +10,9 @@ export interface Startup {
   emailAddress: string;
   description?: string;
 }
+
+
+
+
+
+

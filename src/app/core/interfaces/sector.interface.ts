@@ -5,3 +5,8 @@ export interface Sectors {
   color?: string;
   categoryName?: string;
 }
+
+
+
+
+
